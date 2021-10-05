@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Chilanka', cursive;
+    background-color: #f2f3f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div.message {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e4053;
+    border: 2px solid #2e4053;
+    padding: 8px 12px 6px;
+    border-radius: 8px;
+    margin: 0;
+    top: -45;
+    transition: 0.3s ease-in;
+    box-shadow: 3px 3px 5px #9ea4ad;
+}
+
+div.message.active {
+    top: 0;
+}
+
+.container {
+    margin-top: 36px;
+}
+
+h1 {
+    position: relative;
+    margin: 15px auto;
+    transform: translateX(-30px);
+    text-align: center;
+}
+
+h1::after {
+    position: absolute;
+    content: 'Man';
+    padding-top: 2px;
+    color: #fff;
+    background: #000;
+    height: 28px;
+    top: 4px;
+    margin: 0;
+    border-radius: 10%;
+}
+
+h2 {
+    font-size: 20px;
+    color: #3c3d3d;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.first {
+    margin: 0 25%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.first .man {
+    height: 300px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first .man svg{
+    height: 280px;
+    width: 160px;
+}
+.first .details {
+    width: 130px;
+    padding: 5px;
+}
+.second {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px auto;
+}
+#keyboard {
+    padding: 8px 10px;
+    margin: 12px auto;
+    border: 2px solid #00003d;
+    border-radius: 10px;
+    background-color: #e6e7e8;
+    text-align: center;
+    box-shadow: 4px 4px 4px #999;
+}
+#keyboard div {
+    margin: 5px 0;
+}
+#keyboard input {
+    padding: 4px 6px 1px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px #999;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 700;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+#keyboard input:hover {
+    transform: scale(1.05);
+  }
+#keyboard input[value="I"] {
+    padding: 4px 9px 1px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .first .man {
+        height: 150px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first .man img{
+        height: 140px;
+        width: 130px;
+    }
+}
