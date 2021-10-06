@@ -37,6 +37,7 @@ div.message.active {
 
 .container {
     margin-top: 36px;
+    height: calc(100vh - 36px);
 }
 
 h1 {
@@ -68,13 +69,11 @@ h2 {
 .first {
     margin: 0 25%;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .first .man {
-    height: 300px;
-    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,14 +128,13 @@ h2 {
         margin: 0;
     }
     .first .man {
-        height: 150px;
-        width: 90px;
+        height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .first .man img{
-        height: 140px;
-        width: 130px;
+    .first .man svg{
+        height: 100%;
+        width: auto;
     }
 }
