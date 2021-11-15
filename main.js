@@ -4,6 +4,7 @@ const loss = document.querySelector('#losses');
 const guess = document.querySelector('#guess');
 const win = document.querySelector('#wins');
 const svgs = document.querySelectorAll('svg');
+const typer = document.querySelector('audio.type');
 const message = document.querySelector('.message')
 let choice, word, display, w, losses = 0, wins = 0;
 
@@ -55,6 +56,7 @@ function round() {
 })();
 round();
 function keyMatch(key) {
+  typer.play();
   h2.innerText += ' ' + key;
   function showPopup() {
     message.classList.add('active');
